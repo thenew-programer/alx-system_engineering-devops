@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 777 dir[0-9]
+chmod 755 {dir0,dir1,dir2} 

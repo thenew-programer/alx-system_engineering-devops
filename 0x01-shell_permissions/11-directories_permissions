@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R 755 dir*
+chmod 755 dir[0-9]

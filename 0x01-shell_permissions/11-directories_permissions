@@ -1,2 +1,2 @@
 #!/bin/bash
-find dir* -type d -exec chmod o+x,g+x,u+x {}
+chmod u+x,g+x,o+x dir*

@@ -1,2 +1,2 @@
 #!/bin/bash
-find dir* -type d -exec chmod 755 {} \;
+chmod 755 ./dir*

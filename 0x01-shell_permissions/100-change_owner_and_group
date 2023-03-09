@@ -1,3 +1,2 @@
 #!/bin/bash
-sudo chown vincent ./
-chgrp staff ./
+find . -exec chown vincent {} + -exec chgrp staff {} +

@@ -1,2 +1,2 @@
 #!/bin/bash
-find dir* -exec chmod 755 {} +
+find dir* -type d -exec chmod o+x,g+x,u+x {}

@@ -1,2 +1,2 @@
 #!/bin/bash
- tr '[:upper:][:lower:]' '[:upper:][:lower:]' | tr 'ac' 'ze'
+tr 'Ac' 'Ze'

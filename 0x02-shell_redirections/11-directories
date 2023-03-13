@@ -1,2 +1,2 @@
 #!/bin/bash
-x="$(find -type d -print | wc -l)" ; echo $((x-1))
+find . -type d -print | grep -vE '^./(\.|..)' | wc -l

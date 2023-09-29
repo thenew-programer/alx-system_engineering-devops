@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# display this program pid
-
-echo $$

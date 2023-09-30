@@ -26,7 +26,7 @@ output_file=/tmp/my_process
 case "$1" in
 	"start")
 		./manage_my_process &
-		echo "$(pgrep -f manage_my_process)" > $pid_file
+		pgrep -f manage_my_process > $pid_file
 		echo "manage_my_process started"
 		;;
 	"stop")
@@ -38,7 +38,7 @@ case "$1" in
 		pkill -f manage_my_process
 		rm -rf $output_file $pid_file
 		./manage_my_process &
-		echo "$(pgrep -f manage_my_process)" > $pid_file
+		pgrep -f manage_my_process > $pid_file
 		echo "manage_my_process restarted"
 		;;
 	*)

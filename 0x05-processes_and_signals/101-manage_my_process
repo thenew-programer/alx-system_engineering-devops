@@ -20,7 +20,6 @@
 	# Displays Usage: manage_my_process {start|stop|restart} if any other argument or no argument is passed
 
 pid_file=/var/run/my_process.pid
-output_file=/tmp/my_process
 
 
 case "$1" in
@@ -31,12 +30,12 @@ case "$1" in
 		;;
 	"stop")
 		pkill -f manage_my_process
-		rm -rf $output_file $pid_file
+		rm -rf $pid_file
 		echo "manage_my_process stopped"
 		;;
 	"restart")
 		pkill -f manage_my_process
-		rm -rf $output_file $pid_file
+		rm -rf $pid_file
 		./manage_my_process &
 		pgrep -f manage_my_process > $pid_file
 		echo "manage_my_process restarted"

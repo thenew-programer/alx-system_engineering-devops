@@ -10,11 +10,9 @@
 */
 int infinite_while(void)
 {
-    while (1)
-    {
-        sleep(1);
-    }
-    return (0);
+	while (1)
+		sleep(1);
+	return (0);
 }
 
 /**
@@ -36,9 +34,7 @@ int main(void)
 			count++;
 		}
 		else
-		{
 			exit(0);
-		}
 	}
 	infinite_while();
 	return (0);
